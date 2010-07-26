@@ -1,0 +1,9 @@
+<form class="admin_comment [_c_ODDEVEN_]" action="./admin.php?[_c_SESSION_URL_]" method="post" accept-charset="UTF-8">
+    <div>
+        <input type="submit" name="delete" class="cimg delete" value="" title="L&ouml;schen" onclick="return confirm('Wollen Sie den Kommentar wirklich löschen?')"/> 
+        <h3>#[_c_COMMENT_EVENT_ID_] [_c_COMMENT_DATE_] - [_c_COMMENT_TIME_]: <span title="[_c_COMMEN_EMAIL_]">[_c_COMMENT_NAME_]</span> </h3>
+        [_c_COMMENT_TEXT_]
+        <input type="hidden" name="id" value="[_c_COMMENT_ID_]" />
+        <input type="hidden" name="action" value="comment" />
+    </div>
+</form>

@@ -1,0 +1,9 @@
+<? // evenc config-file
+$CONFIG["db"]["host"]       = "";   // e.g. localhost
+$CONFIG["db"]["user"]       = "";   // e.g. usr_web003
+$CONFIG["db"]["password"]   = "";   // e.g. mypersonalpwd
+$CONFIG["db"]["name"]       = "";   // e.g. usr_web003_1
+$CONFIG["db"]["prefix"]     = "";   // e.g. evc1_
+$CONFIG["multiuser"]        = false;// true or false
+$CONFIG["login"]            = "";   // default user
+?>

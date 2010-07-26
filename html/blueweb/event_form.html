@@ -1,0 +1,63 @@
+    <!-- Event Form /-->
+    <script type="text/javascript">
+    function selectButton(id)
+    {
+        document.forms['event'].elements[id].checked = true;
+    }
+    </script>
+    <form id="event" action ="[_c_URL_FORM_EVENT_]" class='event' method="post" accept-charset="utf-8" >
+        <fieldset>
+            <legend>[_l_EVENT_ADD_]</legend>
+            
+            <label for="date">[_l_EVENT_DATE_]: </label>
+            <input type="text" id="date" name="date" maxlength="10" size="20" value="[_c_EVENT_STARTDATE_]" />            
+            <div>[_l_EVENT_DATE_NOTE_]</div>
+            
+            <label for="time">[_l_EVENT_TIME_]: </label>
+            <input type="text" id="time" name="time" maxlength="5" size="20" value="[_c_EVENT_TIME_]" />                        
+            <div>[_l_EVENT_TIME_NOTE_]</div>
+            
+            <label for="name">[_l_EVENT_NAME_]: </label>
+            <input type="text" id="name" name="name" maxlength="25" size="30" value="[_c_EVENT_NAME_]" />
+            <div>[_l_EVENT_NAME_NOTE_]</div>
+            
+            <label for="location">[_l_EVENT_LOCATION_]: </label>
+            <input type="text" id="location" name="location" maxlength="20" size="30" value="[_c_EVENT_LOCATION_]" />            
+            <div>[_l_EVENT_LOCATION_NOTE_]</div>
+            
+            <label for="text">[_l_EVENT_TEXT_]: </label><textarea id="text" name="text" cols="45" rows ="5">[_c_EVENT_TEXT_]</textarea>
+            <div>[_l_EVENT_TEXT_NOTE_]
+            [_if_SETTINGS_BBCODE_]
+                [_l_BBCODE_ON_]
+            [_else_]
+                [_l_BBCODE_OFF_]
+            [_endif_]                
+            </div>
+            
+            <fieldset>
+                <legend>[_l_EVENT_RECURRENCE_]</legend>
+                <input type="radio" id="rec_none" name="recurrence" value="Single" [_c_EVENT_RECURRENCE_NONE_] />
+                    <label for="rec_none">[_l_EVENT_RECURRENCE_NONE_]</label>
+                <input type="radio" id="rec_day" name="recurrence" value="Day" [_c_EVENT_RECURRENCE_DAY_] />
+                    <label for="rec_day">[_l_EVENT_RECURRENCE_DAY_]</label>
+                <input type="radio" id="rec_week" name="recurrence" value="Week" [_c_EVENT_RECURRENCE_WEEK_] />
+                    <label for="rec_week">[_l_EVENT_RECURRENCE_WEEK_]</label>
+                <input type="radio" id="rec_month" name="recurrence" value="Month" [_c_EVENT_RECURRENCE_MONTH_] />
+                    <label for="rec_month">[_l_EVENT_RECURRENCE_MONTH_]</label>
+                <input type="radio" id="rec_year" name="recurrence" value="Year" [_c_EVENT_RECURRENCE_YEAR_] />
+                    <label for="rec_year">[_l_EVENT_RECURRENCE_YEAR_]  </label>         
+            </fieldset>
+            <fieldset>
+                <legend>[_l_EVENT_PERIOD_]</legend>
+                <input type="radio" id="per_forever" name="period" value="forever" [_c_EVENT_PERIOD_FOREVER_] />
+                    <label for="per_forever">[_l_EVENT_PERIOD_FOREVER_]</label>
+                <input type="radio" id="per_until" name="period" value="until" [_c_EVENT_PERIOD_UNTIL_] />
+                    <label for="per_until">[_l_EVENT_PERIOD_UNTIL_] <input type="text" name="until" maxlength="10" size="10" value="[_c_EVENT_ENDDATE_]" onclick="selectButton('per_until');" /></label>
+                <input type="radio" id="per_times" name="period" value="times" [_c_EVENT_PERIOD_TIMES_] />
+                    <label for="per_times"><input type="text" name="times" maxlength="3" size="2" value="2" onclick="selectButton('per_times');" /> [_l_EVENT_PERIOD_TIMES_]</label>
+            </fieldset>            
+            <input type="hidden" name="id" value="[_c_EVENT_ID_]" />
+            <input type="hidden" name="action" value="event" />
+            <input type="reset" /> <input type="submit" />
+        </fieldset>
+    </form>

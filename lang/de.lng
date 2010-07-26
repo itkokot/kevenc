@@ -1,0 +1,80 @@
+; evenc 1.0 language file
+; lang=de
+
+[Calendar]
+DAYMO   = "Mo"
+DAYTU   = "Di"
+DAYWE   = "Mi"
+DAYTH   = "Do"
+DAYFR   = "Fr"
+DAYSA   = "Sa"
+DAYSU   = "So"
+
+[MessageBox]
+ERROR   = "Fehler"
+MESSAGE = "Benachrichtigung"
+
+[EventList]
+NO_EVENTS_LISTED    = "Es sind noch keine Eintr&auml;ge vorhanden."
+
+[Search]
+SEARCH_STRING           = "Suchen"
+SEARCH_LIMIT            = "Es kann nur nach Begriffen mit mehr als 3 Buchstaben gesucht werden."
+SEARCH_NOTHING_FOUND    = "Es wurde nichts gefunden."
+
+[Comment]
+COMMENT             = "Kommentar"
+COMMENT_WROTE       = "schrieb am"
+COMMENT_ADD         = "Kommentar hinzuf&uuml;gen"
+COMMENT_NAME        = "Name"
+COMMENT_NAME_NOTE   = "Maximal 50 Zeichen."
+COMMENT_EMAIL       = "EMail"
+COMMENT_EMAIL_NOTE  = "Wird nicht angezeigt. Maximal 100 Zeichen."
+COMMENT_TEXT        = "Text"
+COMMENT_TEXT_NOTE   = "HTML ist deaktiviert. BBCode kann benutzt werden.<br />Maximal 500 Zeichen."
+COMMENT_SUCCESS     = "Der Kommentar wurde erfolgreich hinzugef&uuml;gt."
+COMMENT_FAILED      = "Der Kommentar konnte nicht hinzugef&uuml;gt werden."
+COMMENT_DISABLED    = "Kommentare wurden deaktiviert."
+
+[EVENT]
+EVENT               = "Ereignis"
+EVENTS              = "Ereignisse"
+EVENT_ADD           = "Eintrag hinzuf&uuml;gen"
+EVENT_DATE          = "Datum"
+EVENT_DATE_NOTE     = "Format YYYY-MM-TT"
+EVENT_TIME          = "Zeit"
+EVENT_TIME_NOTE     = "Format HH:MM Uhr"
+EVENT_NAME          = "Name"
+EVENT_NAME_NOTE     = "Maximal 25 Zeichen."
+EVENT_LOCATION      = "&Ouml;rtlichkeit"
+EVENT_LOCATION_NOTE = "Maximal 20 Zeichen."
+EVENT_TEXT          = "Text"
+EVENT_TEXT_NOTE     = "Maximal 250 Zeichen. HTML ist deaktiviert."
+EVENT_RECURRENCE    = "Wiederholung"
+EVENT_RECURRENCE_NONE   = "Keine"
+EVENT_RECURRENCE_DAY    = "T&auml;glich"
+EVENT_RECURRENCE_WEEK   = "W&ouml;chentlich"
+EVENT_RECURRENCE_MONTH  = "Monatlich"
+EVENT_RECURRENCE_YEAR   = "J&auml;hrlich"
+EVENT_PERIOD        = "Zeitraum"
+EVENT_PERIOD_FOREVER    = "F&uuml;r immer"
+EVENT_PERIOD_UNTIL      = "Bis"
+EVENT_PERIOD_TIMES      = "mal"
+EVENT_SUCCESS       = "Der Eintrag wurde erfolgreich hinzugef&uuml;gt."
+EVENT_FAILED        = "Der Eintrag konnte nicht hinzugef&uuml;gt werden."
+EVENT_NONE          = "Es ist kein Eintrag vorhanden."
+EVENT_PUBLICPOSTING = "Das &ouml;ffentliche Eintragen von Ereignissen wurde deaktiviert."
+
+[BBCODE]
+BBCODE_ON           = "BBCode ist aktiviert."
+BBCODE_OFF          = "BBCode ist deaktiviert."
+
+[RSS]
+RSS_ALL             = "Alle Events"
+
+[Exception]
+FORMATEXCEPTION     = "Der folgende Eintrag ist leider nicht g&uuml;ltig: "
+DBINSERTEXCEPTION   = "Es konnte nicht in die Datenbank geschrieben werden."
+LANGUAGEEXCEPTION   = "konnte nicht als Sprache eingestellt werden"
+SQLEXCEPTION        = "Es ist ein Fehler in der Datenbankabfrage aufgetreten. Bitte kontaktieren Sie einen Administrator!"
+TEMPLATEEXCEPTION   = "konnte nicht als Template eingestellt werden"

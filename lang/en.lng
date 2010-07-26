@@ -1,0 +1,80 @@
+; evenc 1.0 language file
+; lang=en
+
+[Calendar]
+DAYMO   = "Mo"
+DAYTU   = "Tu"
+DAYWE   = "We"
+DAYTH   = "Th"
+DAYFR   = "Fr"
+DAYSA   = "Sa"
+DAYSU   = "Su"
+
+[MessageBox]
+ERROR   = "Error"
+MESSAGE = "Message"
+
+[EventList]
+NO_EVENTS_LISTED    = "There are currently no events listed."
+
+[Search]
+SEARCH_STRING           = "Search"
+SEARCH_LIMIT            = "Your search term must contain at least 3 chars."
+SEARCH_NOTHING_FOUND    = "Nothing found."
+
+[Comment]
+COMMENT             = "Comment"
+COMMENT_WROTE       = "wrote at"
+COMMENT_ADD         = "Add a comment"
+COMMENT_NAME        = "Name"    
+COMMENT_NAME_NOTE   = "Max. 50 chars."
+COMMENT_EMAIL       = "EMail"
+COMMENT_EMAIL_NOTE  = "Not displayed. Max. 100 chars."
+COMMENT_TEXT        = "Text"
+COMMENT_TEXT_NOTE   = "HTML disabled. BBCode can be used.<br /> Max 500 chars."
+COMMENT_SUCCESS     = "Comment successfully added."
+COMMENT_FAILED      = "Adding the comment failed."
+COMMENT_DISABLED    = "Comments disabled."
+
+[EVENT]
+EVENT               = "Event"
+EVENTS              = "Events"
+EVENT_ADD           = "New event"
+EVENT_DATE          = "Date"
+EVENT_DATE_NOTE     = "Format YYYY-MM-TT"
+EVENT_TIME          = "Time"
+EVENT_TIME_NOTE     = "Format HH:MM h"
+EVENT_NAME          = "Name"
+EVENT_NAME_NOTE     = "Max 25 chars."
+EVENT_LOCATION      = "Location"
+EVENT_LOCATION_NOTE = "Max. 20 chars."
+EVENT_TEXT          = "Text"
+EVENT_TEXT_NOTE     = "Max 250 chars. HTML disabled."
+EVENT_RECURRENCE    = "Recurrence"
+EVENT_RECURRENCE_NONE   = "None"
+EVENT_RECURRENCE_DAY    = "Daily"
+EVENT_RECURRENCE_WEEK   = "Weekly"
+EVENT_RECURRENCE_MONTH  = "Monthly"
+EVENT_RECURRENCE_YEAR   = "Yearly"
+EVENT_PERIOD        = "Period"
+EVENT_PERIOD_FOREVER    = "Forever"
+EVENT_PERIOD_UNTIL      = "Until"
+EVENT_PERIOD_TIMES      = "times"
+EVENT_SUCCESS       = "Event successfully added."
+EVENT_FAILED        = "Adding the event failed."
+EVENT_NONE          = "No event found."
+EVENT_PUBLICPOSTING = "Public posting is disabled."
+
+[BBCODE]
+BBCODE_ON           = "BBCode enabled."
+BBCODE_OFF          = "BBCode disabled."
+
+[RSS]
+RSS_ALL             = "All events"
+
+[Exception]
+FORMATEXCEPTION     = "You entered an invalid"
+DBINSERTEXCEPTION   = "It could not be inserted into the database"
+LANGUAGEEXCEPTION   = "could not be set as language on your system"
+SQLEXCEPTION        = "There was an error in your database-query. Please contact your admin!"
+TEMPLATEEXCEPTION   = "could not be set as an template."

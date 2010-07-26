@@ -1,0 +1,17 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#Single User Mode
+RewriteRule ([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([0-9]+)/([a-z-]+)$   index.php?year=$1&month=$2&day=$3&event=$4&action=$5    [L]
+RewriteRule ([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([0-9]+)$             index.php?year=$1&month=$2&day=$3&event=$4              [L]
+RewriteRule ([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([a-z-]+)$            index.php?year=$1&month=$2&day=$3&action=$4             [L]
+RewriteRule ([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})$                      index.php?year=$1&month=$2&day=$3                       [L]
+
+#Multi User Mode
+RewriteRule ([a-z0-9_]{3,60})/?$			    index.php?login=$1  [L]
+RewriteRule ([a-z0-9_]{3,60})/admin.php$ 		admin.php           [L]
+RewriteRule ([a-z0-9_]{3,60})/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([0-9]+)/([a-z-]+)$   index.php?login=$1&year=$2&month=$3&day=$4&event=$5&action=$6    [L]
+RewriteRule ([a-z0-9_]{3,60})/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([0-9]+)$             index.php?login=$1&year=$2&month=$3&day=$4&event=$5              [L]
+RewriteRule ([a-z0-9_]{3,60})/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})/([a-z-]+)$            index.php?login=$1&year=$2&month=$3&day=$4&action=$5             [L]
+RewriteRule ([a-z0-9_]{3,60})/([0-9]{4})/([0-9]{1,2})/([0-9]{1,2})$                      index.php?login=$1&year=$2&month=$3&day=$4                       [L]

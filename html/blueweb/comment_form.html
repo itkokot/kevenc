@@ -1,0 +1,19 @@
+    <!-- Comment Form /-->
+    <form action="[_c_URL_FORM_COMMENT_]" class='comment' method="post" accept-charset="UTF-8">
+        <fieldset>
+            <legend>[_l_COMMENT_ADD_]</legend>
+            <label for="name">[_l_COMMENT_NAME_]: </label>
+            <input type="text" id="name" name="name" maxlength="50" size="30" value="[_c_COMMENT_NAME_]" />
+            <div>[_l_COMMENT_NAME_NOTE_]</div>
+                
+            <label for="email">[_l_COMMENT_EMAIL_]: </label>
+            <input type="text" id="email" name="email" maxlength="100" size="30" value="[_c_COMMENT_EMAIL_]" />
+            <div>[_l_COMMENT_EMAIL_NOTE_]</div>
+                
+            <label for="text">[_l_COMMENT_TEXT_]: </label><textarea id="text" name="text" cols="45" rows ="5">[_c_COMMENT_TEXT_]</textarea>
+            <div>[_l_COMMENT_TEXT_NOTE_]</div>
+            <input type="hidden" name="id" value="[_c_COMMENT_EVENT_ID_]" />
+            <input type="hidden" name="action" value="comment" />
+            <input type="reset" /> <input type="submit" />
+        </fieldset>
+    </form>

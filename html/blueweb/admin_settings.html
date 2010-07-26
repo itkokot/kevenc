@@ -1,0 +1,56 @@
+<form action ="./admin.php?action=settings[_c_SESSION_URL_]" class="admin_settings" method="post" accept-charset="UTF-8" >
+    <fieldset>
+        <legend>Account</legend>
+        
+        <label for="login">Login</label>
+        <input type="text" id="login" disabled="disabled" size="30" value="[_c_SESSION_ACCOUNT_LOGIN_]" />
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" maxlength="50" size="30" value="[_c_SESSION_ACCOUNT_NAME_]" />
+        
+        <label for="email">EMail </label>
+        <input type="text" id="email" name="email" maxlength="100" size="30" value="[_c_SESSION_ACCOUNT_EMAIL_]"  />
+        
+        <label for="password">Passwort </label>
+        <input type="password" id="password" name="password" maxlength="24" size="15" value=""  />
+        
+        <label for="delete">Account l&ouml;schen</label>
+        <input type="checkbox" name="delete" disabled="disabled" />
+        
+        <input type="submit" />
+        <input type="reset" />
+        
+    </fieldset>
+</form>
+
+<form action ="./admin.php?action=settings[_c_SESSION_URL_]" class="admin_settings" method="post" accept-charset="UTF-8" >
+    <fieldset>
+        <legend>Kalender</legend>
+        
+        <label for="language">Sprache</label>
+        <select id="language" name="language">
+            [_c_SETTINGS_SELECTION_LANGUAGE_]        
+        </select>        
+        
+        <label for="template">Template</label>
+        <select id="template" name="template">
+            [_c_SETTINGS_SELECTION_TEMPLATE_]        
+        </select>
+        
+        <label for="bbcode">BBCode erlauben</label>
+        <input type="checkbox" id="bbcode" name="bbcode" [_c_SETTINGS_BBCODE_CHECK_] />
+        
+        <label for="rewriteurl">Suchmaschienenfreundlich URLs</label>
+        <input type="checkbox" id="rewriteurl" name="rewriteurl" [_c_SETTINGS_REWRITEURL_CHECK_] />
+        
+        <label for="publicposting">&Ouml;ffentliches Eintragen von Events</label>
+        <input type="checkbox" id="publicposting" name="publicposting" [_c_SETTINGS_PUBLICPOSTING_CHECK_] />        
+        
+        <label for="comments">Kommentare erlauben</label>
+        <input type="checkbox" id="comments" name="comments" [_c_SETTINGS_COMMENTS_CHECK_] />         
+        
+        <input type="submit" />
+        <input type="reset" />
+        
+    </fieldset>
+</form>
